@@ -79,7 +79,7 @@ html[dir="rtl"] .scroll-progress { transform-origin: 100% 50%; }
 .marquee:hover .marquee__track { animation-play-state: paused; }
 html[dir="rtl"] .marquee__track { animation-name: marqueeRtl; }
 .marquee__item { display: inline-flex; align-items: center; gap: 12px; padding: 0 28px; color: #fff; font-size: 1.15rem; font-weight: 700; white-space: nowrap; }
-.marquee__item::after { content: "✦"; color: var(--ice); margin-inline-start: 28px; font-size: .9rem; }
+.marquee__item::after { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--ice); margin-inline-start: 28px; }
 
 /* ---------- Reveal variants ---------- */
 .js .reveal--left { transform: translateX(-60px); }

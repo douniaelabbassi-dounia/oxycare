@@ -30,6 +30,8 @@
 .float-card--1 { top: 10%; inset-inline-start: -2%; }
 .float-card--2 { bottom: 20%; inset-inline-start: -6%; inset-inline-end: auto; }
 .float-card--3 { top: 34%; inset-inline-end: -4%; }
+.float-card__icon svg { width: 22px; height: 22px; fill: none; stroke: var(--amethyst); stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+.done__icon svg { width: 34px; height: 34px; fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
 .float-card--status .status-dot { width: 14px; height: 14px; border-radius: 50%; background: #f0a63a; box-shadow: 0 0 0 5px rgba(240, 166, 58, .25); animation: pulseDot 1.6s infinite; flex-shrink: 0; margin: 0 6px; }
 .float-card--status .status-text { color: #d9861a; transition: color .3s; }
 .float-card--status.is-complete .status-dot { background: #2fb36d; box-shadow: 0 0 0 5px rgba(47, 179, 109, .25); }
@@ -66,7 +68,6 @@
 }
 .mre__inner { position: relative; display: grid; grid-template-columns: 1.05fr .95fr; gap: 56px; align-items: center; }
 .mre .section__title { color: #fff; }
-.mre__flag { display: inline-block; animation: wave 2.4s ease-in-out infinite; transform-origin: 70% 80%; }
 .mre__lead { color: rgba(255, 255, 255, .85); font-size: 1.08rem; margin-top: 14px; }
 .mre__packs { display: grid; gap: 14px; margin: 28px 0; }
 .pack { background: rgba(255, 255, 255, .08); border: 1px solid rgba(255, 255, 255, .16); border-radius: var(--radius-sm); padding: 18px 20px; transition: background .3s, transform .3s; }
@@ -83,9 +84,9 @@ html[dir="rtl"] .pack:hover { transform: translateX(-6px); }
 .mre__poster { position: relative; display: block; width: 100%; padding: 0; border: 0; border-radius: 20px; overflow: hidden; cursor: zoom-in; background: none; box-shadow: 0 40px 80px -30px rgba(0, 0, 0, .6), 0 0 0 6px rgba(255, 255, 255, .12); }
 .mre__poster img { width: 100%; transition: transform .6s ease; }
 .mre__poster:hover img { transform: scale(1.04); }
-.mre__zoom { position: absolute; top: 12px; inset-inline-end: 12px; width: 40px; height: 40px; border-radius: 50%; background: rgba(255, 255, 255, .9); color: var(--violet); display: grid; place-items: center; font-size: 1.2rem; font-weight: 800; transition: transform .3s; }
+.mre__zoom { position: absolute; top: 12px; inset-inline-end: 12px; width: 40px; height: 40px; border-radius: 50%; background: rgba(255, 255, 255, .9); color: var(--violet); display: grid; place-items: center; transition: transform .3s; }
+.mre__zoom svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; }
 .mre__poster:hover .mre__zoom { transform: scale(1.15) rotate(90deg); }
-.plane { position: absolute; top: -40px; inset-inline-end: -10px; font-size: 2.4rem; animation: fly 7s ease-in-out infinite; filter: drop-shadow(0 8px 10px rgba(0, 0, 0, .3)); }
 
 /* ---------- Suivi : étapes verticales + tableau ---------- */
 .follow { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
@@ -161,8 +162,6 @@ html[dir="rtl"] .pack:hover { transform: translateX(-6px); }
 @keyframes archShine { 0%, 70% { transform: translateX(-120%); } 100% { transform: translateX(120%); } }
 @keyframes pulseDot { 50% { box-shadow: 0 0 0 9px rgba(240, 166, 58, 0); } }
 @keyframes patternMove { to { background-position: 46px 46px, 46px 46px; } }
-@keyframes wave { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-8deg); } 75% { transform: rotate(8deg); } }
-@keyframes fly { 0%, 100% { transform: translate(0, 0) rotate(0); } 50% { transform: translate(-30px, -18px) rotate(-6deg); } }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 960px) {
@@ -175,7 +174,6 @@ html[dir="rtl"] .pack:hover { transform: translateX(-6px); }
   .poles { margin-top: -30px; }
   .poles__grid { grid-template-columns: repeat(2, 1fr); }
   .mre__inner, .follow { grid-template-columns: 1fr; gap: 40px; }
-  .plane { top: -30px; inset-inline-end: 0; }
   .bento { grid-template-columns: repeat(2, 1fr); }
   .bento__item:nth-child(even), .js .bento__item.reveal.is-visible:nth-child(even) { transform: translateY(30px); }
 }

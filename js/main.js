@@ -12,19 +12,19 @@ const CONFIG = {
 };
 
 const SERVICES = [
-  { id: "cnss",       cat: "admin", icon: "📄", fr: ["Dossiers CNSS", "Préparation, dépôt et suivi de vos dossiers CNSS, sans perte de temps ni files d'attente."], ar: ["ملفات الضمان الاجتماعي CNSS", "تحضير وإيداع وتتبع ملفاتكم لدى CNSS دون ضياع الوقت أو الانتظار."] },
-  { id: "amo",        cat: "admin", icon: "🏥", fr: ["AMO – Assurance maladie", "Demandes de prise en charge, dossiers de remboursement et suivi auprès de l'AMO."], ar: ["التأمين الإجباري عن المرض AMO", "طلبات التحمل وملفات الاسترجاع وتتبعها لدى AMO."] },
-  { id: "moukataa",   cat: "admin", icon: "🏛️", fr: ["Moukataâ & documents officiels", "Démarches à la Moukataâ et obtention de vos documents officiels : dépôt et suivi complet."], ar: ["المقاطعة والوثائق الرسمية", "الإجراءات لدى المقاطعة واستخراج وثائقكم الرسمية: إيداع وتتبع كامل."] },
-  { id: "pack",       cat: "admin", icon: "📑", fr: ["Pack administratif", "Une prise en charge complète de vos démarches, avec un suivi de dossier transparent."], ar: ["الباقة الإدارية", "تكفل شامل بإجراءاتكم الإدارية مع تتبع واضح لملفكم."] },
-  { id: "consult",    cat: "sante", icon: "🩺", fr: ["Accompagnement aux consultations", "Nous accompagnons vos proches chez le médecin et vous faisons un compte-rendu immédiat."], ar: ["المرافقة إلى الاستشارات الطبية", "نرافق أقاربكم إلى الطبيب ونوافيكم بتقرير فوري."] },
-  { id: "hospi",      cat: "sante", icon: "🛏️", fr: ["Hospitalisations", "Présence et suivi attentionné lors des hospitalisations, de l'admission à la sortie."], ar: ["الاستشفاء", "حضور ومتابعة دقيقة خلال فترة الاستشفاء، من الدخول إلى الخروج."] },
-  { id: "suivi",      cat: "sante", icon: "💊", fr: ["Suivi médical sur-mesure", "Rendez-vous, analyses, traitements : un suivi attentionné qui préserve l'indépendance des seniors."], ar: ["متابعة طبية حسب الحاجة", "المواعيد والتحاليل والعلاجات: متابعة دقيقة تحافظ على استقلالية كبار السن."] },
-  { id: "transport",  cat: "sante", icon: "🚘", fr: ["Transport accompagné", "Un accompagnateur attentionné, de la porte du domicile jusqu'au rendez-vous."], ar: ["النقل مع المرافقة", "مرافق يعتني بأقاربكم من باب المنزل حتى الموعد."] },
-  { id: "visite",     cat: "auto",  icon: "🔧", fr: ["Visite technique", "Nous emmenons votre véhicule au contrôle technique à votre place."], ar: ["الفحص التقني", "نتكلف بإجراء الفحص التقني لسيارتكم نيابة عنكم."] },
-  { id: "vidange",    cat: "auto",  icon: "🛢️", fr: ["Vidange & entretien mécanique", "Prise en charge de votre véhicule pour son entretien, du garage jusqu'à la remise des clés."], ar: ["تغيير الزيت والصيانة الميكانيكية", "نتكفل بسيارتكم لصيانتها، من المرآب حتى تسليم المفاتيح."] },
-  { id: "assurance",  cat: "auto",  icon: "🛡️", fr: ["Renouvellement d'assurance", "Le renouvellement de votre assurance automobile, sans souci."], ar: ["تجديد التأمين", "تجديد تأمين سيارتكم دون أي عناء."] },
-  { id: "courses",    cat: "conciergerie", icon: "🧺", fr: ["Courses & marché", "Vos courses et le marché faits avec soin, selon vos habitudes."], ar: ["التسوق والسوق", "نقوم بمشترياتكم من السوق بعناية وحسب عاداتكم."] },
-  { id: "livraison",  cat: "conciergerie", icon: "📦", fr: ["Livraisons personnalisées", "Des livraisons à domicile adaptées aux besoins de votre foyer."], ar: ["توصيل حسب الطلب", "توصيل إلى المنزل يناسب احتياجات أسرتكم."] },
+  { id: "cnss",       cat: "admin", fr: ["Dossiers CNSS", "Préparation, dépôt et suivi de vos dossiers CNSS, sans perte de temps ni files d'attente."], ar: ["ملفات الضمان الاجتماعي CNSS", "تحضير وإيداع وتتبع ملفاتكم لدى CNSS دون ضياع الوقت أو الانتظار."] },
+  { id: "amo",        cat: "admin", fr: ["AMO – Assurance maladie", "Demandes de prise en charge, dossiers de remboursement et suivi auprès de l'AMO."], ar: ["التأمين الإجباري عن المرض AMO", "طلبات التحمل وملفات الاسترجاع وتتبعها لدى AMO."] },
+  { id: "moukataa",   cat: "admin", fr: ["Moukataâ & documents officiels", "Démarches à la Moukataâ et obtention de vos documents officiels : dépôt et suivi complet."], ar: ["المقاطعة والوثائق الرسمية", "الإجراءات لدى المقاطعة واستخراج وثائقكم الرسمية: إيداع وتتبع كامل."] },
+  { id: "pack",       cat: "admin", fr: ["Pack administratif", "Une prise en charge complète de vos démarches, avec un suivi de dossier transparent."], ar: ["الباقة الإدارية", "تكفل شامل بإجراءاتكم الإدارية مع تتبع واضح لملفكم."] },
+  { id: "consult",    cat: "sante", fr: ["Accompagnement aux consultations", "Nous accompagnons vos proches chez le médecin et vous faisons un compte-rendu immédiat."], ar: ["المرافقة إلى الاستشارات الطبية", "نرافق أقاربكم إلى الطبيب ونوافيكم بتقرير فوري."] },
+  { id: "hospi",      cat: "sante", fr: ["Hospitalisations", "Présence et suivi attentionné lors des hospitalisations, de l'admission à la sortie."], ar: ["الاستشفاء", "حضور ومتابعة دقيقة خلال فترة الاستشفاء، من الدخول إلى الخروج."] },
+  { id: "suivi",      cat: "sante", fr: ["Suivi médical sur-mesure", "Rendez-vous, analyses, traitements : un suivi attentionné qui préserve l'indépendance des seniors."], ar: ["متابعة طبية حسب الحاجة", "المواعيد والتحاليل والعلاجات: متابعة دقيقة تحافظ على استقلالية كبار السن."] },
+  { id: "transport",  cat: "sante", fr: ["Transport accompagné", "Un accompagnateur attentionné, de la porte du domicile jusqu'au rendez-vous."], ar: ["النقل مع المرافقة", "مرافق يعتني بأقاربكم من باب المنزل حتى الموعد."] },
+  { id: "visite",     cat: "auto",  fr: ["Visite technique", "Nous emmenons votre véhicule au contrôle technique à votre place."], ar: ["الفحص التقني", "نتكلف بإجراء الفحص التقني لسيارتكم نيابة عنكم."] },
+  { id: "vidange",    cat: "auto",  fr: ["Vidange & entretien mécanique", "Prise en charge de votre véhicule pour son entretien, du garage jusqu'à la remise des clés."], ar: ["تغيير الزيت والصيانة الميكانيكية", "نتكفل بسيارتكم لصيانتها، من المرآب حتى تسليم المفاتيح."] },
+  { id: "assurance",  cat: "auto",  fr: ["Renouvellement d'assurance", "Le renouvellement de votre assurance automobile, sans souci."], ar: ["تجديد التأمين", "تجديد تأمين سيارتكم دون أي عناء."] },
+  { id: "courses",    cat: "conciergerie", fr: ["Courses & marché", "Vos courses et le marché faits avec soin, selon vos habitudes."], ar: ["التسوق والسوق", "نقوم بمشترياتكم من السوق بعناية وحسب عاداتكم."] },
+  { id: "livraison",  cat: "conciergerie", fr: ["Livraisons personnalisées", "Des livraisons à domicile adaptées aux besoins de votre foyer."], ar: ["توصيل حسب الطلب", "توصيل إلى المنزل يناسب احتياجات أسرتكم."] },
 ];
 window.OXY_SERVICES = SERVICES;
 
@@ -67,7 +67,7 @@ const AR = {
   "how.s4t": "تقرير فوري", "how.s4p": "تتوصلون بتقرير واضح في كل مرحلة، أينما كنتم.",
   "tr.label": "مثال لملف", "tr.title": "ملف كبير السن — AMO", "tr.ongoing": "قيد المعالجة", "tr.done": "تمت المعالجة",
   "tr.s1": "استلام الوثائق", "tr.s2": "مراجعة الملف واستكماله", "tr.s3": "إيداع طلب التحمل", "tr.s4": "التتبع لدى الهيئة", "tr.s5": "إرسال التقرير للعائلة",
-  "tr.toast": "رسالة مرسلة: «تمت معالجة الملف ✅»",
+  "tr.toast": "رسالة مرسلة: «تمت معالجة الملف»",
   "field.eyebrow": "في الميدان", "field.title": "أوكسي كير يومياً في الرباط", "field.lead": "فريق حاضر ومهتم وصارم في كل مهمة.",
   "field.c1": "إيداع وتتبع ملفاتكم AMO وCNSS والمقاطعة", "field.c2": "مرافقة بعناية حتى الموعد", "field.c3": "التسوق من السوق يصلكم بابتسامة", "field.c4": "الفحص التقني والزيت والتأمين نتكلف بها عنكم",
   "why.eyebrow": "لماذا أوكسي كير", "why.title": "أوكسجين إكسلانس للمساعدة تصبح OxyCare",
@@ -163,7 +163,7 @@ let selectedService = null;
 
 function renderChips() {
   $("#serviceChips").innerHTML = SERVICES.map(s =>
-    `<button type="button" class="chip${s.id === selectedService ? " is-selected" : ""}" data-id="${s.id}" aria-pressed="${s.id === selectedService}">${s.icon} ${s[lang][0]}</button>`
+    `<button type="button" class="chip${s.id === selectedService ? " is-selected" : ""}" data-id="${s.id}" aria-pressed="${s.id === selectedService}">${s[lang][0]}</button>`
   ).join("");
 }
 function selectService(id) {
@@ -207,14 +207,14 @@ form.addEventListener("submit", e => {
   if (!validate(3)) return;
   const s = SERVICES.find(x => x.id === selectedService);
   const msg = [
-    "Bonjour OxyCare 👋",
+    "Bonjour OxyCare,",
     `Je souhaite demander le service : ${s.fr[0]}`,
-    form.mre.checked && "✈️ Je suis MRE (offre spéciale MRE)",
-    `📅 Date : ${form.date.value} (${form.time.value})`,
-    form.area.value.trim() && `📍 Lieu : ${form.area.value.trim()}`,
-    `👤 Nom : ${form.name.value.trim()}`,
-    `📞 Téléphone : ${form.phone.value.trim()}`,
-    form.message.value.trim() && `📝 ${form.message.value.trim()}`,
+    form.mre.checked && "Je suis MRE (offre spéciale MRE)",
+    `Date : ${form.date.value} (${form.time.value})`,
+    form.area.value.trim() && `Lieu : ${form.area.value.trim()}`,
+    `Nom : ${form.name.value.trim()}`,
+    `Téléphone : ${form.phone.value.trim()}`,
+    form.message.value.trim() && `Précisions : ${form.message.value.trim()}`,
   ].filter(Boolean).join("\n");
   window.open(`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg)}`, "_blank", "noopener");
   goToStep(4);
