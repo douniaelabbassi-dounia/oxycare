@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <script>document.documentElement.classList.add("js")</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OxyCare – Oxygène Excellence Assistance | Rabat</title>
+  <meta name="description" content="OxyCare (Oxygène Excellence Assistance) : services d'assistance administrative (CNSS, AMO, Moukataâ) et accompagnement sur-mesure pour les seniors à Rabat. Indépendance et sérénité pour vos proches.">
+  <meta property="og:title" content="OxyCare – Oxygène Excellence Assistance">
+  <meta property="og:description" content="Assistance administrative (CNSS, AMO, Moukataâ) et accompagnement des seniors à Rabat. Votre confiance, notre exigence.">
+  <meta property="og:image" content="https://douniaelabbassi-dounia.github.io/oxycare/assets/img/og-cover.jpg">
+  <meta property="og:url" content="https://douniaelabbassi-dounia.github.io/oxycare/">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#3C1E5D">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fx.css">
+  <link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader__drop">
+    <img src="assets/img/oxycare-icon.jpg" alt="">
+    <span class="preloader__ripple"></span><span class="preloader__ripple preloader__ripple--2"></span>
+  </div>
+  <p class="preloader__name">OxyCare</p>
+  <p class="preloader__slogan" lang="ar" dir="rtl">ديما حدّاك ديما معاك</p>
+  <div class="preloader__bar"><span></span></div>
+</div>
+
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#accueil" class="brand" aria-label="OxyCare – accueil">
+      <img src="assets/img/oxycare-icon.jpg" alt="" class="brand__icon">
+      <span class="brand__text">
+        <span class="brand__name">OxyCare</span>
+        <span class="brand__tag">Oxygène Excellence Assistance</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <a href="#services" class="nav__link" data-i18n="nav.services">Services</a>
+      <a href="#mre" class="nav__link" data-i18n="nav.mre">Offre MRE</a>
+      <a href="#fonctionnement" class="nav__link" data-i18n="nav.how">Suivi</a>
+      <a href="#terrain" class="nav__link" data-i18n="nav.field">Sur le terrain</a>
+      <a href="#contact" class="nav__link" data-i18n="nav.contact">Contact</a>
+      <a href="#reserver" class="btn btn--primary nav__cta" data-i18n="nav.book">Demander un service</a>
+    </nav>
+
+    <div class="header__actions">
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Changer de langue">
+        <span data-lang-label>العربية</span>
+      </button>
+      <button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="accueil">
+  <div class="hero__bg" aria-hidden="true">
+    <span class="blob blob--1" data-depth="30"></span><span class="blob blob--2" data-depth="-40"></span><span class="blob blob--3" data-depth="20"></span>
+    <canvas class="bubbles" id="bubbles"></canvas>
+  </div>
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <p class="eyebrow intro" style="--i:0"><span class="dot"></span> <span data-i18n="hero.eyebrow">Oxygène Excellence Assistance · Agdal, Rabat</span></p>
+      <h1 class="hero__title">
+        <span class="line"><span class="line__in intro-up" style="--i:1" data-i18n="hero.title1">Votre confiance,</span></span>
+        <span class="line"><span class="line__in grad grad--anim intro-up" style="--i:2" data-i18n="hero.title2">notre exigence.</span></span>
+      </h1>
+      <p class="hero__rotator intro" style="--i:3"><span data-i18n="hero.rot">On s'occupe de</span> <span class="rotator" id="rotator" aria-live="polite"></span><span class="caret" aria-hidden="true"></span></p>
+      <p class="hero__slogan intro" style="--i:4" lang="ar" dir="rtl">ديما حدّاك ديما معاك</p>
+      <p class="hero__lead intro" style="--i:5" data-i18n="hero.lead">
+        Services d'assistance administrative (CNSS, AMO, Moukataâ) et accompagnement sur-mesure pour les seniors à Rabat. Indépendance et sérénité pour vos proches.
+      </p>
+      <div class="hero__cta intro" style="--i:6">
+        <a href="#reserver" class="btn btn--primary btn--lg magnetic" data-i18n="hero.cta1">Demander un service</a>
+        <a data-link="whatsapp" href="#" target="_blank" rel="noopener" class="btn btn--ghost btn--lg magnetic btn--wa">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Zm0 23.7c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1 1 16 26.7Zm5.9-8c-.3-.2-1.9-1-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.2 3.2 1.3 3.4c.2.2 2.3 3.5 5.6 4.9 2.1.9 2.9 1 4 .8.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5l-.6-.4Z"/></svg>
+          <span data-text="phone"></span>
+        </a>
+      </div>
+      <ul class="hero__badges intro" style="--i:7">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg><span>CNSS · AMO · Moukataâ</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.4-9.3-9A5.4 5.4 0 0 1 12 6a5.4 5.4 0 0 1 9.3 6c-2.3 4.6-9.3 9-9.3 9Z"/></svg><span data-i18n="hero.b2">Accompagnement seniors</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg><span data-i18n="hero.b3">Compte-rendu immédiat</span></li>
+      </ul>
+    </div>
+
+    <div class="hero__visual intro-zoom" style="--i:2">
+      <div class="arch" data-depth="-14">
+        <picture>
+          <source srcset="assets/img/photos/accompagnement-senior.webp" type="image/webp">
+          <img src="assets/img/photos/accompagnement-senior.jpg" alt="Un accompagnateur aide une dame âgée à sortir de la voiture, à Rabat" class="arch__img">
+        </picture>
+        <span class="arch__shine" aria-hidden="true"></span>
+      </div>
+      <div class="arch__badge" data-depth="22"><img src="assets/img/oxycare-icon.jpg" alt=""></div>
+      <div class="float-card float-card--1" data-depth="35">
+        <span class="float-card__icon">📑</span>
+        <div><strong data-i18n="hero.fc1t">Pack administratif</strong><small data-i18n="hero.fc1s">Dépôt & suivi complet</small></div>
+      </div>
+      <div class="float-card float-card--2" data-depth="-30">
+        <span class="float-card__icon">🩺</span>
+        <div><strong data-i18n="hero.fc2t">Suivi médical</strong><small data-i18n="hero.fc2s">Compte-rendu immédiat</small></div>
+      </div>
+      <div class="float-card float-card--3 float-card--status" data-depth="25">
+        <span class="status-dot"></span>
+        <div><strong data-i18n="hero.fc3t">Dossier AMO</strong><small><span data-i18n="hero.fc3s">Statut :</span> <b class="status-text" id="heroStatus">En cours</b></small></div>
+      </div>
+      <span class="spark spark--1"></span><span class="spark spark--2"></span><span class="spark spark--3"></span>
+    </div>
+  </div>
+  <a href="#services" class="scroll-hint" aria-label="Défiler vers les services"><span></span></a>
+</section>
+
+<!-- ============ PÔLES ============ -->
+<section class="poles">
+  <div class="container poles__grid">
+    <a href="#services" class="pole reveal reveal--zoom" data-pole="admin">
+      <span class="pole__icon"><svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span>
+      <strong data-i18n="cat.admin">Administratif</strong><small>CNSS · AMO · Moukataâ</small>
+    </a>
+    <a href="#services" class="pole reveal reveal--zoom" data-delay="80" data-pole="sante">
+      <span class="pole__icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.3-9A5.4 5.4 0 0 1 12 6a5.4 5.4 0 0 1 9.3 6c-2.3 4.6-9.3 9-9.3 9Z"/><path d="M12 10v5M9.5 12.5h5"/></svg></span>
+      <strong data-i18n="cat.sante">Santé & seniors</strong><small data-i18n="pole.sante">Consultations, hospitalisations</small>
+    </a>
+    <a href="#services" class="pole reveal reveal--zoom" data-delay="160" data-pole="auto">
+      <span class="pole__icon"><svg viewBox="0 0 24 24"><path d="M5 16V11l2-5h10l2 5v5"/><path d="M3 16h18v3H3zM7 19v2M17 19v2"/><circle cx="7.5" cy="13" r="1"/><circle cx="16.5" cy="13" r="1"/></svg></span>
+      <strong data-i18n="cat.auto">Automobile</strong><small data-i18n="pole.auto">Visite technique, vidange, assurance</small>
+    </a>
+    <a href="#services" class="pole reveal reveal--zoom" data-delay="240" data-pole="conciergerie">
+      <span class="pole__icon"><svg viewBox="0 0 24 24"><path d="M4 9h16l-1.5 11h-13Z"/><path d="M8 9a4 4 0 0 1 8 0"/></svg></span>
+      <strong data-i18n="cat.conciergerie">Conciergerie</strong><small data-i18n="pole.conciergerie">Courses, marché, livraisons</small>
+    </a>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track" id="marqueeTrack"></div>
+</div>
+
+<!-- ============ SERVICES ============ -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow" data-i18n="services.eyebrow">Nos services</p>
+      <h2 class="section__title" data-i18n="services.title">Indépendance et sérénité pour vos proches</h2>
+      <p class="section__lead" data-i18n="services.lead">Démarches administratives, santé, automobile ou quotidien : choisissez une catégorie, nous nous occupons du reste.</p>
+    </div>
+
+    <div class="tabs reveal" role="tablist" aria-label="Catégories de services">
+      <button class="tab is-active" role="tab" aria-selected="true" data-filter="all" data-i18n="services.all">Tous</button>
+      <button class="tab" role="tab" aria-selected="false" data-filter="admin" data-i18n="cat.admin">Administratif</button>
+      <button class="tab" role="tab" aria-selected="false" data-filter="sante" data-i18n="cat.sante">Santé & seniors</button>
+      <button class="tab" role="tab" aria-selected="false" data-filter="auto" data-i18n="cat.auto">Automobile</button>
+      <button class="tab" role="tab" aria-selected="false" data-filter="conciergerie" data-i18n="cat.conciergerie">Conciergerie</button>
+    </div>
+
+    <div class="services__grid" id="servicesGrid"><!-- rendu par JS --></div>
+  </div>
+</section>
+
+<!-- ============ OFFRE MRE ============ -->
+<section class="section mre" id="mre">
+  <div class="mre__pattern" aria-hidden="true"></div>
+  <div class="container mre__inner">
+    <div class="mre__content reveal reveal--left">
+      <p class="eyebrow eyebrow--light" data-i18n="mre.eyebrow">Offre spéciale MRE</p>
+      <h2 class="section__title"><span data-i18n="mre.title">Marhaba Bkoum !</span> <span class="mre__flag" aria-hidden="true">🇲🇦 ✈️</span></h2>
+      <p class="mre__lead" data-i18n="mre.lead">Vous vivez à l'étranger ? Nous gérons vos démarches au Maroc et veillons sur vos proches comme s'ils étaient les nôtres. Vous êtes informé à chaque étape.</p>
+
+      <div class="mre__packs">
+        <article class="pack">
+          <h3><span aria-hidden="true">🩺</span> <span data-i18n="mre.p1t">Administratif & santé — Sérénité totale</span></h3>
+          <ul>
+            <li><strong data-i18n="mre.p1a">Accompagnement de vos proches</strong><span data-i18n="mre.p1ad">Consultations, hospitalisations, suivi médical attentionné, compte-rendu immédiat.</span></li>
+            <li><strong data-i18n="mre.p1b">Pack administratif</strong><span data-i18n="mre.p1bd">Moukataâ, documents officiels, dépôt et suivi complet.</span></li>
+          </ul>
+        </article>
+        <article class="pack">
+          <h3><span aria-hidden="true">🚗</span> <span data-i18n="mre.p2t">Auto & conciergerie — Logistique facile</span></h3>
+          <ul>
+            <li><strong data-i18n="mre.p2a">Logistique automobile</strong><span data-i18n="mre.p2ad">Passage technique, entretien mécanique, renouvellement d'assurances sans souci.</span></li>
+            <li><strong data-i18n="mre.p2b">Conciergerie quotidienne</strong><span data-i18n="mre.p2bd">Courses, marché, livraisons personnalisées pour votre foyer.</span></li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="mre__cta">
+        <a href="#reserver" class="btn btn--light magnetic" data-mre-book data-i18n="mre.cta">Profiter de l'offre MRE</a>
+        <button type="button" class="btn btn--ghost-light" data-lightbox="assets/img/photos/affiche-mre.jpg" data-caption="Offre spéciale MRE — Marhaba Bkoum !" data-i18n="mre.poster">Voir l'affiche</button>
+      </div>
+    </div>
+
+    <div class="mre__visual reveal reveal--right" data-delay="120">
+      <button type="button" class="mre__poster tilt" data-lightbox="assets/img/photos/affiche-mre.jpg" data-caption="Offre spéciale MRE — Marhaba Bkoum !" aria-label="Agrandir l'affiche de l'offre MRE">
+        <picture>
+          <source srcset="assets/img/photos/affiche-mre.webp" type="image/webp">
+          <img src="assets/img/photos/affiche-mre.jpg" alt="Affiche : Offre spéciale MRE — Marhaba Bkoum ! Administratif & santé, auto & conciergerie" loading="lazy">
+        </picture>
+        <span class="mre__zoom" aria-hidden="true">⤢</span>
+      </button>
+      <div class="plane" aria-hidden="true">✈️</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SUIVI / COMMENT ÇA MARCHE ============ -->
+<section class="section section--tint" id="fonctionnement">
+  <div class="container follow">
+    <div class="follow__steps">
+      <div class="section__head section__head--left reveal">
+        <p class="eyebrow" data-i18n="how.eyebrow">Comment ça marche</p>
+        <h2 class="section__title" data-i18n="how.title">Un suivi transparent, de A à Z</h2>
+        <p class="section__lead" data-i18n="how.lead">Vous savez toujours où en est votre dossier ou votre proche.</p>
+      </div>
+      <ol class="vsteps" id="steps">
+        <span class="vsteps__line" aria-hidden="true"><span id="stepsLine"></span></span>
+        <li class="step reveal reveal--left"><span class="step__num">1</span><div><h3 data-i18n="how.s1t">Vous nous contactez</h3><p data-i18n="how.s1p">Par WhatsApp, téléphone, email, Facebook ou via le formulaire.</p></div></li>
+        <li class="step reveal reveal--left" data-delay="100"><span class="step__num">2</span><div><h3 data-i18n="how.s2t">Nous étudions votre besoin</h3><p data-i18n="how.s2p">Liste des documents, rendez-vous, prise en charge : on vous propose une solution sur-mesure.</p></div></li>
+        <li class="step reveal reveal--left" data-delay="200"><span class="step__num">3</span><div><h3 data-i18n="how.s3t">Nous agissons</h3><p data-i18n="how.s3p">Dépôt de dossier, accompagnement médical, garage ou courses : on s'en charge.</p></div></li>
+        <li class="step reveal reveal--left" data-delay="300"><span class="step__num">4</span><div><h3 data-i18n="how.s4t">Compte-rendu immédiat</h3><p data-i18n="how.s4p">Vous recevez un retour clair à chaque étape, où que vous soyez.</p></div></li>
+      </ol>
+    </div>
+
+    <div class="tracker reveal reveal--right" id="tracker" aria-label="Exemple de suivi de dossier">
+      <div class="tracker__bar"><span></span><span></span><span></span><em>OxyCare · Suivi</em></div>
+      <div class="tracker__head">
+        <div>
+          <small data-i18n="tr.label">Exemple de dossier</small>
+          <strong data-i18n="tr.title">Dossier Senior — AMO</strong>
+        </div>
+        <span class="pill" id="trackerPill" data-i18n="tr.ongoing">En cours</span>
+      </div>
+      <div class="tracker__progress"><span id="trackerProgress"></span></div>
+      <ul class="tracker__list" id="trackerList">
+        <li><span class="tick"></span><span data-i18n="tr.s1">Documents récupérés</span></li>
+        <li><span class="tick"></span><span data-i18n="tr.s2">Dossier vérifié et complété</span></li>
+        <li><span class="tick"></span><span data-i18n="tr.s3">Demande de prise en charge déposée</span></li>
+        <li><span class="tick"></span><span data-i18n="tr.s4">Suivi auprès de l'organisme</span></li>
+        <li><span class="tick"></span><span data-i18n="tr.s5">Compte-rendu envoyé à la famille</span></li>
+      </ul>
+      <div class="tracker__toast" id="trackerToast">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Z"/></svg>
+        <span data-i18n="tr.toast">Message envoyé : « Dossier traité ✅ »</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SUR LE TERRAIN ============ -->
+<section class="section" id="terrain">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow" data-i18n="field.eyebrow">Sur le terrain</p>
+      <h2 class="section__title" data-i18n="field.title">OxyCare au quotidien, à Rabat</h2>
+      <p class="section__lead" data-i18n="field.lead">Une équipe présente, attentionnée et rigoureuse, pour chaque mission.</p>
+    </div>
+    <div class="bento">
+      <figure class="bento__item bento__item--tall reveal reveal--zoom">
+        <button type="button" data-lightbox="assets/img/photos/dossier-administratif.jpg" data-caption-key="field.c1">
+          <picture><source srcset="assets/img/photos/dossier-administratif.webp" type="image/webp"><img src="assets/img/photos/dossier-administratif.jpg" alt="Un conseiller tamponne une demande de prise en charge AMO" loading="lazy"></picture>
+        </button>
+        <figcaption><span class="tag" data-i18n="cat.admin">Administratif</span><span data-i18n="field.c1">Dépôt et suivi de vos dossiers AMO, CNSS, Moukataâ</span></figcaption>
+      </figure>
+      <figure class="bento__item bento__item--tall reveal reveal--zoom" data-delay="100">
+        <button type="button" data-lightbox="assets/img/photos/accompagnement-senior.jpg" data-caption-key="field.c2">
+          <picture><source srcset="assets/img/photos/accompagnement-senior.webp" type="image/webp"><img src="assets/img/photos/accompagnement-senior.jpg" alt="Accompagnement d'une dame âgée à son rendez-vous" loading="lazy"></picture>
+        </button>
+        <figcaption><span class="tag" data-i18n="cat.sante">Santé & seniors</span><span data-i18n="field.c2">Accompagnement attentionné jusqu'au rendez-vous</span></figcaption>
+      </figure>
+      <figure class="bento__item bento__item--tall reveal reveal--zoom" data-delay="200">
+        <button type="button" data-lightbox="assets/img/photos/conciergerie-courses.jpg" data-caption-key="field.c3">
+          <picture><source srcset="assets/img/photos/conciergerie-courses.webp" type="image/webp"><img src="assets/img/photos/conciergerie-courses.jpg" alt="Livraison des courses du marché chez une cliente" loading="lazy"></picture>
+        </button>
+        <figcaption><span class="tag" data-i18n="cat.conciergerie">Conciergerie</span><span data-i18n="field.c3">Courses et marché livrés avec le sourire</span></figcaption>
+      </figure>
+      <figure class="bento__item bento__item--tall reveal reveal--zoom" data-delay="300">
+        <button type="button" data-lightbox="assets/img/photos/logistique-auto.jpg" data-caption-key="field.c4">
+          <picture><source srcset="assets/img/photos/logistique-auto.webp" type="image/webp"><img src="assets/img/photos/logistique-auto.jpg" alt="Remise des clés après l'entretien du véhicule" loading="lazy"></picture>
+        </button>
+        <figcaption><span class="tag" data-i18n="cat.auto">Automobile</span><span data-i18n="field.c4">Visite technique, vidange et assurance gérées pour vous</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POURQUOI ============ -->
+<section class="section section--tint" id="pourquoi">
+  <div class="container why">
+    <div class="why__visual reveal reveal--left">
+      <div class="why__card tilt">
+        <img src="assets/img/oxycare-logo.jpg" alt="OxyCare – ديما حداك ديما معاك – The assistance family & concierge à Rabat">
+      </div>
+    </div>
+    <div class="why__content">
+      <div class="section__head section__head--left reveal">
+        <p class="eyebrow" data-i18n="why.eyebrow">Pourquoi OxyCare</p>
+        <h2 class="section__title" data-i18n="why.title">Oxygène Excellence Assistance devient OxyCare</h2>
+        <p class="section__lead" data-i18n="why.lead">Un nouveau nom, la même équipe et les mêmes services. Deux mains qui protègent ce qui est précieux : vos proches et vos démarches.</p>
+      </div>
+      <ul class="values">
+        <li class="value reveal reveal--right"><span class="value__icon"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></span><div><h3 data-i18n="why.v1t">Confiance</h3><p data-i18n="why.v1p">Vos documents et vos proches entre de bonnes mains.</p></div></li>
+        <li class="value reveal reveal--right" data-delay="80"><span class="value__icon"><svg viewBox="0 0 24 24"><path d="m12 3 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.9Z"/></svg></span><div><h3 data-i18n="why.v2t">Exigence</h3><p data-i18n="why.v2p">Des dossiers complets, déposés et suivis jusqu'au bout.</p></div></li>
+        <li class="value reveal reveal--right" data-delay="160"><span class="value__icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.3-9A5.4 5.4 0 0 1 12 6a5.4 5.4 0 0 1 9.3 6c-2.3 4.6-9.3 9-9.3 9Z"/></svg></span><div><h3 data-i18n="why.v3t">Indépendance des seniors</h3><p data-i18n="why.v3p">Un accompagnement sur-mesure qui respecte leur autonomie.</p></div></li>
+        <li class="value reveal reveal--right" data-delay="240"><span class="value__icon"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5Z"/></svg></span><div><h3 data-i18n="why.v4t">Compte-rendu immédiat</h3><p data-i18n="why.v4p">Vous êtes informé à chaque étape, même depuis l'étranger.</p></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOKING ============ -->
+<section class="section section--dark" id="reserver">
+  <svg class="wave wave--top" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path class="wave__a" d="M0,64 C240,120 480,0 720,48 C960,96 1200,16 1440,64 L1440,0 L0,0 Z"/><path class="wave__b" d="M0,40 C300,90 520,10 760,40 C1000,70 1220,20 1440,44 L1440,0 L0,0 Z"/></svg>
+  <span class="dark-blob dark-blob--1" aria-hidden="true"></span><span class="dark-blob dark-blob--2" aria-hidden="true"></span>
+  <div class="container booking">
+    <div class="booking__intro reveal reveal--left">
+      <p class="eyebrow eyebrow--light" data-i18n="book.eyebrow">Demande de service</p>
+      <h2 class="section__title" data-i18n="book.title">Dites-nous comment vous aider</h2>
+      <p data-i18n="book.lead">Remplissez ce formulaire en 1 minute : votre demande nous parvient directement sur WhatsApp et nous vous répondons rapidement.</p>
+      <p class="booking__slogan" lang="ar" dir="rtl">ديما حدّاك ديما معاك</p>
+    </div>
+
+    <form class="form reveal reveal--right" id="bookingForm" novalidate data-delay="120">
+      <div class="form__progress"><span id="formProgress"></span></div>
+
+      <fieldset class="form__step is-active" data-step="1">
+        <legend data-i18n="book.step1">1. Quel service ?</legend>
+        <div class="chips" id="serviceChips"><!-- rendu par JS --></div>
+        <p class="form__error" data-error="service" data-i18n="book.errService">Veuillez choisir un service.</p>
+      </fieldset>
+
+      <fieldset class="form__step" data-step="2">
+        <legend data-i18n="book.step2">2. Quand et où ?</legend>
+        <div class="form__row">
+          <label class="field"><span data-i18n="book.date">Date souhaitée</span><input type="date" name="date" required></label>
+          <label class="field"><span data-i18n="book.time">Moment</span>
+            <select name="time">
+              <option value="Matin" data-i18n="book.morning">Matin</option>
+              <option value="Après-midi" data-i18n="book.afternoon">Après-midi</option>
+              <option value="Flexible" data-i18n="book.flexible">Flexible</option>
+            </select>
+          </label>
+        </div>
+        <label class="field"><span data-i18n="book.area">Ville / quartier</span><input type="text" name="area" placeholder="Agdal, Rabat"></label>
+        <label class="check"><input type="checkbox" name="mre"><span data-i18n="book.mre">Je vis à l'étranger (offre MRE)</span></label>
+        <p class="form__error" data-error="date" data-i18n="book.errDate">Veuillez indiquer une date.</p>
+      </fieldset>
+
+      <fieldset class="form__step" data-step="3">
+        <legend data-i18n="book.step3">3. Vos coordonnées</legend>
+        <label class="field"><span data-i18n="book.name">Nom complet</span><input type="text" name="name" autocomplete="name" required></label>
+        <label class="field"><span data-i18n="book.phone">Téléphone / WhatsApp</span><input type="tel" name="phone" autocomplete="tel" placeholder="+212 6 XX XX XX XX" required></label>
+        <label class="field"><span data-i18n="book.msg">Précisions (facultatif)</span><textarea name="message" rows="3"></textarea></label>
+        <p class="form__error" data-error="contact" data-i18n="book.errContact">Merci d'indiquer votre nom et un numéro valide.</p>
+      </fieldset>
+
+      <div class="form__step form__done" data-step="4">
+        <div class="done__icon">✓</div>
+        <h3 data-i18n="book.doneT">Merci !</h3>
+        <p data-i18n="book.doneP">WhatsApp s'est ouvert avec votre demande. Il ne vous reste qu'à l'envoyer. À très vite !</p>
+        <button type="button" class="btn btn--ghost-light" id="formReset" data-i18n="book.again">Nouvelle demande</button>
+      </div>
+
+      <div class="form__nav" id="formNav">
+        <button type="button" class="btn btn--ghost-light" id="prevStep" data-i18n="book.prev">Retour</button>
+        <button type="button" class="btn btn--light" id="nextStep" data-i18n="book.next">Continuer</button>
+        <button type="submit" class="btn btn--light" id="submitStep" data-i18n="book.submit">Envoyer via WhatsApp</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="container container--narrow">
+    <div class="section__head reveal">
+      <p class="eyebrow" data-i18n="faq.eyebrow">Questions fréquentes</p>
+      <h2 class="section__title" data-i18n="faq.title">Vous vous demandez…</h2>
+    </div>
+    <div class="faq">
+      <details class="faq__item reveal"><summary data-i18n="faq.q1">Quelles démarches administratives prenez-vous en charge ?</summary><p data-i18n="faq.a1">Dossiers CNSS, AMO (demandes de prise en charge, remboursements), Moukataâ et documents officiels : nous préparons, déposons et suivons votre dossier jusqu'au bout.</p></details>
+      <details class="faq__item reveal"><summary data-i18n="faq.q2">Je vis à l'étranger, pouvez-vous gérer mes démarches à distance ?</summary><p data-i18n="faq.a2">Oui, c'est tout le principe de notre offre spéciale MRE : administratif, accompagnement de vos proches, logistique automobile et conciergerie, avec un compte-rendu immédiat.</p></details>
+      <details class="faq__item reveal"><summary data-i18n="faq.q3">Comment accompagnez-vous les seniors ?</summary><p data-i18n="faq.a3">Consultations, hospitalisations, suivi médical attentionné : nous accompagnons vos proches avec respect pour préserver leur indépendance, et nous vous tenons informés.</p></details>
+      <details class="faq__item reveal"><summary data-i18n="faq.q4">Où êtes-vous situés ?</summary><p data-i18n="faq.a4">Nous sommes basés à Agdal, Rabat. Contactez-nous pour vérifier la prise en charge de votre adresse.</p></details>
+      <details class="faq__item reveal"><summary data-i18n="faq.q5">Quels sont vos tarifs ?</summary><p data-i18n="faq.a5">Les tarifs dépendent du service demandé. Écrivez-nous sur WhatsApp au 06 77 44 78 44 : nous vous répondons avec une proposition claire.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section section--tint" id="contact">
+  <div class="container contact">
+    <div class="contact__info reveal reveal--left">
+      <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+      <h2 class="section__title" data-i18n="contact.title">Parlons de votre besoin</h2>
+      <p class="section__lead" data-i18n="contact.lead">Une question, un dossier, un proche à accompagner ? Écrivez-nous.</p>
+      <ul class="contact__list">
+        <li><a class="contact__item" data-link="whatsapp" href="#" target="_blank" rel="noopener"><span class="contact__icon"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5Z"/></svg></span><span><small data-i18n="contact.wa">WhatsApp direct</small><strong data-text="phoneIntl"></strong></span></a></li>
+        <li><a class="contact__item" data-link="phone" href="#"><span class="contact__icon"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg></span><span><small data-i18n="contact.phone">Téléphone</small><strong data-text="phone"></strong></span></a></li>
+        <li><a class="contact__item" data-link="email" href="#"><span class="contact__icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><span><small>Email</small><strong data-text="email"></strong></span></a></li>
+        <li><a class="contact__item" data-link="facebook" href="#" target="_blank" rel="noopener"><span class="contact__icon"><svg viewBox="0 0 24 24"><path d="M15 3h-2a4 4 0 0 0-4 4v3H7v4h2v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h2Z"/></svg></span><span><small>Facebook</small><strong>Oxygene Excellence Assistance</strong></span></a></li>
+        <li><a class="contact__item" data-link="maps" href="#" target="_blank" rel="noopener"><span class="contact__icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><span><small data-i18n="contact.address">Adresse</small><strong data-i18n="contact.city">Agdal, Rabat, Maroc</strong></span></a></li>
+      </ul>
+    </div>
+    <div class="contact__map reveal reveal--right" data-delay="120">
+      <iframe title="Carte – Agdal, Rabat" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-6.8770%2C33.9840%2C-6.8340%2C34.0060&amp;layer=mapnik&amp;marker=33.9950%2C-6.8550"></iframe>
+      <div class="zones">
+        <strong data-i18n="contact.zones">Agdal, Rabat</strong>
+        <div class="zones__list">
+          <span data-i18n="contact.z1">Clients à Rabat</span>
+          <span data-i18n="contact.z2">Familles MRE à l'étranger</span>
+          <span data-i18n="contact.z3">Seniors & proches</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <div class="footer__logo"><img src="assets/img/oxycare-icon.jpg" alt=""></div>
+      <div>
+        <p class="footer__name">OxyCare</p>
+        <p class="footer__sub">Oxygène Excellence Assistance · <span data-i18n="footer.motto">Votre confiance, notre exigence.</span></p>
+        <p class="footer__slogan" lang="ar" dir="rtl">ديما حدّاك ديما معاك</p>
+      </div>
+    </div>
+    <nav class="footer__nav" aria-label="Liens de pied de page">
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#mre" data-i18n="nav.mre">Offre MRE</a>
+      <a href="#reserver" data-i18n="nav.book">Demander un service</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <p class="footer__copy">© <span id="year"></span> OxyCare · Oxygène Excellence Assistance · <span data-i18n="contact.city">Agdal, Rabat, Maroc</span></p>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image agrandie" hidden>
+  <button type="button" class="lightbox__close" id="lightboxClose" aria-label="Fermer">×</button>
+  <figure><img id="lightboxImg" alt=""><figcaption id="lightboxCap"></figcaption></figure>
+</div>
+
+<!-- WhatsApp flottant -->
+<a class="wa-float" data-link="whatsapp" href="#" target="_blank" rel="noopener" aria-label="Écrire sur WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Zm0 23.7c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1 1 16 26.7Zm5.9-8c-.3-.2-1.9-1-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.2 3.2 1.3 3.4c.2.2 2.3 3.5 5.6 4.9 2.1.9 2.9 1 4 .8.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5l-.6-.4Z"/></svg>
+</a>
+
+<button class="to-top" id="toTop" type="button" aria-label="Retour en haut">↑</button>
+
+<script src="js/main.js"></script>
+<script src="js/fx.js"></script>
+</body>
+</html>
